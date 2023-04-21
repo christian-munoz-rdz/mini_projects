@@ -2,7 +2,7 @@ import PyPDF2
 
 def readPdf():
     # abrir el archivo pdf
-    with open('3-Analisis (Unidad II).pdf', 'rb') as file:
+    with open('archivo2.pdf', 'rb') as file:
         # crear un objeto pdf reader
         pdf_reader = PyPDF2.PdfFileReader(file)
 
@@ -19,6 +19,8 @@ def readPdf():
 
             # imprimir el texto
             print(text)
+
+
 
 def main():
     readPdf()
